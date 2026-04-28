@@ -1,0 +1,80 @@
+/* Style for main heading */
+h1 {
+  color: black;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style for subheadings */
+h3 {
+  color: black;
+  font-size: 20px;
+}
+
+/* Base body styling */
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Box model styling for content sections */
+.box-model {
+  margin: 20px;
+  border: 5px solid whitesmoke;
+  padding: 15px;
+  background-color: whitesmoke;
+}
+
+/* Additional box styling for footer sections */
+.box-model .one,
+.box-model .two {
+  margin: 20px;
+  border: 5px solid grey;
+  padding: 15px;
+  background-color: lightgrey;
+}
+
+/* Flexbox layout for navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: whitesmoke;
+  padding: 10px;
+}
+
+/* Navigation links styling */
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Grid layout for wallpaper cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual card styling */
+.card {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
